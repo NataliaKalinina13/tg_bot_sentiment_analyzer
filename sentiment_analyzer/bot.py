@@ -10,7 +10,7 @@ FastTextSocialNetworkModel.MODEL_PATH = r'/Users/nataliakalinina/PycharmProjects
 model = FastTextSocialNetworkModel(tokenizer=tokenizer)
 
 
-API_token = '6185694736:AAEWztOGTsDfKzgJQHivKZ-ipKZbdbmfFAc'
+API_token = 'token_text'
 
 bot = telebot.TeleBot(API_token)
 
