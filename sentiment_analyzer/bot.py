@@ -71,6 +71,6 @@ class SentimentAnalyzerBot:
 
 if __name__ == '__main__':
     API_token = 'token_text'
-    model_path = r'/Users/nataliakalinina/PycharmProjects/sentiment_analyzer/fasttext-social-network-model.bin'
+    model_path = r'model_path'
     bot = SentimentAnalyzerBot(API_token, model_path)
     bot.run_bot()
