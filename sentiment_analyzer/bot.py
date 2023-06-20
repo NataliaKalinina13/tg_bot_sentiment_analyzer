@@ -64,7 +64,8 @@ class SentimentAnalyzerBot:
         clean_punct_mess = low_message.translate(str.maketrans("", "", string.punctuation))
         return clean_punct_mess
 
-    def run(self):
+    def run_bot(self):
+        '''launch a bot'''
         self.bot.polling(none_stop=True)
 
 
@@ -72,4 +73,4 @@ if __name__ == '__main__':
     API_token = 'token_text'
     model_path = r'/Users/nataliakalinina/PycharmProjects/sentiment_analyzer/fasttext-social-network-model.bin'
     bot = SentimentAnalyzerBot(API_token, model_path)
-    bot.run()
+    bot.run_bot()
