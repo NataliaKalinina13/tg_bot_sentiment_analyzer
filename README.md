@@ -7,11 +7,11 @@ So, lemmatization and stop-word removing depend on the specifics of your task. I
 However, lemmatization and stop-word removing can increase accuracy. If your task requires an accurate sentiment-analysis and you are dealing with a large amount of texts, in this case you should lemmatize and delete stop words before transferring texts to the Dostoevsky library. 
 
 The library classifies the text into 5 classes:
-- Negative;
-- Positive;
-- Neutral;
+- negative;
+- positive;
+- neutral;
 - speech act (formal greetings, thank-you and congratulatory posts);
-- The "skip" class is for unclear cases.
+- the "skip" class is for unclear cases.
 
 In this project I’m interested only in negative, positive and neutral classes. Also remember that Dostoevsky doesn’t consider emojis as a component of tonality.
 
