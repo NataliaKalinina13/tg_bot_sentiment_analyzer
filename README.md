@@ -6,7 +6,7 @@ So, lemmatization and stop-word removing depend on the specifics of your task. I
 
 However, lemmatization and stop-word removing can increase accuracy. If your task requires an accurate sentiment-analysis and you are dealing with a large amount of texts, in this case you should lemmatize and delete stop words before transferring texts to the Dostoevsky library. 
 
-The library classifies the text into 5 classes:
+The Dostoevsky classifies the text into 5 classes:
 - negative;
 - positive;
 - neutral;
