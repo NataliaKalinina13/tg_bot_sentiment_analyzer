@@ -19,7 +19,7 @@ Let’s have a look at the algorithm of sentiment-analyzer implemented as a tele
 ![sentiment-analyzer algorithm](https://github.com/NataliaKalinina13/tg_bot_sentiment_analyzer/assets/85068191/0fbc7207-d473-4d6b-8a74-03e2ecb78abf)
 
 
-And this is the result! In the future I’ll improve and test new models, but now that’s it))
+And this is the result! Soon I’ll improve it and test new models, but now that’s it))
 <img width="598" alt="Pasted Graphic" src="https://github.com/NataliaKalinina13/tg_bot_sentiment_analyzer/assets/85068191/69851699-4beb-4815-ae5b-0b2bcc8703ef">
 
 
