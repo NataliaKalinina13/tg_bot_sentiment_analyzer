@@ -15,13 +15,13 @@ class SentimentAnalyzerBot:
         FastTextSocialNetworkModel.MODEL_PATH = model_path
 
         @self.bot.message_handler(commands=['start'])
-        def start(self, message):
+        def start(message):
             '''output a greeting after /start'''
             message_with_user_name = f'Привет, <b>{message.from_user.first_name}</b>. Я бот для анализа настроения твоего сообщения. Отправь мне любой текст'
             self.bot.send_message(message.chat.id, message_with_user_name, parse_mode='html')
 
         @self.bot.message_handler()
-        def analyze_message(self, message):
+        def analyze_message(message):
             '''call the preprocessing function and conduct a sentiment-analysis'''
             preprocessed_message = self.preprocess_message(message)
 
@@ -56,6 +56,7 @@ class SentimentAnalyzerBot:
                 response = 'Ваше сообщение негативное'
             elif neutral > positive and neutral > negative:
                 response = 'Ваше сообщение нейтральное'
+
             self.bot.reply_to(message, response)
 
     def preprocess_message(self, message):
